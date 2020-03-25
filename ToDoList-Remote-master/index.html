@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FontAwesome Layout -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP Layout -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <!-- Extended CSS and JS Layout -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- JS Layout -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script async type="text/javascript" src="main.js"></script> -->
+  </head>
+
+  <body>
+    <!-- INPUT FIELD -->
+    <div class="container">
+      <div class="input-group mb-3 mt-4 shadow-sm">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="to Do..."
+          id="add"
+          name="addList"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="add-btn">add</span>
+          <!-- Click funktion needed to add to local -->
+          <span class="input-group-text" id="clear-btn">clear all</span>
+        </div>
+      </div>
+
+      <!-- CONTAINER FOR MESSAGES/LIST -->
+      <div class="container mb-3 mt-3" id="cont"></div>
+
+      <!-- TASK/TIME INPUT FIELD -->
+      <div id="task" class="collapse">
+        <div class="container shadow-sm border p-2 mainTask">
+          <div class="container-item mb-3">
+            <input type="date" id="taskTime" placeholder="mm/dd/yy" />
+          </div>
+
+          <div class="container-item">
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="taskText"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="temp">
+      <p>akakakaka</p>
+    </template>
+
+    <!-- JAVASCRIPT -->
+    <script async type="text/javascript" src="main.js"></script>
+  </body>
+</html>
